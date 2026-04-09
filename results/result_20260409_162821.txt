@@ -1,0 +1,9 @@
+INPUT TYPE: Text Input
+Original Size: 3 bytes
+Expanded Size: 200000 bytes
+
+=== DIEHARDER ===
+ERROR: Dieharder timeout
+
+=== NIST ===
+NIST ERROR: [Errno 2] No such file or directory: 'NIST-Statistical-Test-Suite/sts-2.1.2'

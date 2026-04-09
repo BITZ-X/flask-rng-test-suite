@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+</head>
+<body>
+
+<h1>Randomness Test Results</h1>
+
+<h3>Input Type: {{ input_type }}</h3>
+<p>Original Size: {{ original_size }} bytes</p>
+<p>Expanded Size: {{ final_size }} bytes</p>
+
+<hr>
+
+<h2>Dieharder Test Suite</h2>
+
+<table border="1">
+<tr>
+    <th>Test</th>
+    <th>P-Value</th>
+    <th>Result</th>
+</tr>
+
+{% for r in dieharder %}
+<tr>
+    <td>{{ r.test }}</td>
+    <td>{{ r.p_value }}</td>
+    <td>{{ r.result }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h3>Summary</h3>
+<p>
+Passed: {{ summary.passed }} <br>
+Failed: {{ summary.failed }} <br>
+Weak: {{ summary.weak }}
+</p>
+
+<hr>
+
+<h2>NIST Test Suite</h2>
+
+<ul>
+{% for r in nist %}
+    <li>{{ r }}</li>
+{% endfor %}
+</ul>
+
+<hr>
+
+<p><strong>Saved File:</strong> {{ file }}</p>
+
+<br>
+<a href="/">Run Another Test</a>
+
+</body>
+</html>

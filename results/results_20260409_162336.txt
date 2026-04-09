@@ -1,0 +1,8 @@
+INPUT TYPE:
+Text Input
+
+=== DIEHARDER RESULTS ===
+
+
+=== NIST RESULTS ===
+NIST ERROR: [Errno 2] No such file or directory: 'NIST-Statistical-Test-Suite/sts-2.1.2'
